@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual país</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voce é estrangeiro?</h1>
+    Qual sua nacionalidade: <input type="text" name="txtvalue" id="txtvalue">
+    <input type="button" value="Verificar" onclick="verifica()">
+    <div id="res"></div>
+    <script>
+        function verifica(){
+            var txt = document.querySelector('input#txtvalue')
+            var txtvalue = String(txt.value)
+            var res = document.querySelector('div#res')
+
+            if(txtvalue == 'brasil'){
+                res.innerHTML = 'Brasileiro'
+            }else{
+                res.innerHTML = 'Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
