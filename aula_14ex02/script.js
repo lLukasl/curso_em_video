@@ -5,6 +5,6 @@ function tabuada(){
     var tabuada = ''
     for (var count = 1; count <=10; count++){
         tabuada += n +" x "+ count +"= "+ n*count+ "</br>";
-        res.innerHTML = tabuada;
+        res.innerHTML = tabuada; 
     }
 }
